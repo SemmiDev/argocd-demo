@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: demo-time-config
+  labels:
+    app: demo-time
+data:
+  POSTGRES_DB: "time_demo_db"
+  POSTGRES_USER: "time_demo_db"
+
+  SPRING_DATASOURCE_URL: "jdbc:postgresql://demo-time-db:5432/time_demo_db"
+  SPRING_DATASOURCE_USERNAME: "time_demo_db"
